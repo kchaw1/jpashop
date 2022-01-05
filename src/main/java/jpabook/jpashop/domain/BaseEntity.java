@@ -6,8 +6,8 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 public abstract class BaseEntity {
 
-    private String createdBy;
-    private LocalDateTime createdDate;
+    private String createdBy = "administrator";
+    private LocalDateTime createdDate = LocalDateTime.now();
     private String lastModifiedBy;
     private LocalDateTime lastModifiedDate;
 
